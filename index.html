@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Biker | Haven </title>
+        <title> Biker | Zone </title>
 
         <!-- Google Fonts Link -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,22 +38,24 @@
         <style>
             body{
                 font-family: "Poppins", sans-serif;
-
             }
             h1,h2,h3,h4,h5,h6{
                 font-family: "Oswald", sans-serif;
+                
             }
         </style>
     </head>
 
     <body class="bg-primaryColor text-white">
-        <header>
-            <div class="container mx-auto">
+        
+        <header class="header">
+            <!-- Navbar Section -->
+            <div class="container mx-auto px-7">
                 <div class="navbar">
                     <div class="navbar-start">
                         <!-- Mobile Menu -->
-                        <div class="dropdown">
-                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <div class="dropdown ">
+                            <div tabindex="0" role="button" class="btn btn-gray lg:hidden mr-5">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 class="h-5 w-5"
@@ -77,26 +79,128 @@
                             </ul>
                         </div>
                         <!-- Logo -->
-                        <a class=" text-2xl text-secondaryColor cursor-pointer font-semibold">Bike <span class="text-white">Zone</span></a>
+                        <a class=" text-2xl text-secondaryColor cursor-pointer font-semibold"> Biker <span class="text-white">Zone</span></a>
                     </div>
 
                     <!-- navbar items -->
                     <div class="navbar-end hidden lg:flex">
                         <ul class="menu menu-horizontal px-1">
-                            <li class=" hover:bg-secondaryColor rounded-md transition-all" ><a class="py-3 px-5">Home</a></li>
-                            <li class=" hover:bg-secondaryColor rounded-md transition-all"><a class="py-3 px-5">Shop</a></li>
-                            <li class=" hover:bg-secondaryColor rounded-md transition-all"><a class="py-3 px-5">News</a></li>
-                            <li class=" hover:bg-secondaryColor rounded-md transition-all"><a class="py-3 px-5">Contact</a></li>
+                            <li class=" hover:text-secondaryColor rounded-md transition-all" ><a class="py-3 px-5">Home</a></li>
+                            <li class=" hover:text-secondaryColor rounded-md transition-all"><a class="py-3 px-5">Shop</a></li>
+                            <li class=" hover:text-secondaryColor rounded-md transition-all"><a class="py-3 px-5">News</a></li>
+                            <li class=" hover:text-secondaryColor rounded-md transition-all"><a class="py-3 px-5">Contact</a></li>
                         </ul>
                     </div>
 
                     <!-- navbar Button -->
                     <div class="navbar-end lg:w-36 ">
-                        <a class="btn px-10 bg-secondaryColor border-0">Login</a>
+                        <a class="btn px-10 bg-secondaryColor border-0 text-white hover:text-primaryColor">Login</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider section -->
+            <div class="slider">
+                <div class="container mx-auto ">
+                    <div class="carousel w-full">
+                        <!-- Slide-1 -->
+                        <div id="slide1" class="carousel-item relative w-full py-20">
+
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ">
+                                <div class="px-10  lg:flex-col lg:items-center lg:ml-20  ">
+                                    <h2 class="lg:text-5xl font-bold">Keep Your Ride Safe At Every Time</h2>
+                                    <p class="py-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor 
+                                        do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                    <a class="btn px-10 bg-secondaryColor border-0 text-white hover:text-primaryColor">Purchase</a>
+                                    
+                                </div>
+
+                                <div>
+                                    <img src="images/slider/honda.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="absolute left-5 bottom-10  flex  transform justify-between gap-5 px-7">
+                                <a href="#slide4" class="btn btn-circle">❮</a>
+                                <a href="#slide2" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Slider -2  -->
+                        <div id="slide2" class="carousel-item relative w-full py-20">
+
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ">
+                                <div class="px-10  lg:flex-col lg:items-center lg:ml-20  ">
+                                    <h2 class="lg:text-5xl font-bold">Keep Your Ride Safe At Every Time</h2>
+                                    <p class="py-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor 
+                                        do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                        <a class="btn px-10 bg-secondaryColor border-0 text-white hover:text-primaryColor">Purchase</a>
+                                    
+                                </div>
+
+                                <div>
+                                    <img src="images/slider/slider- 3.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="absolute left-5 bottom-10  flex  transform justify-between gap-5 px-7">
+                                <a href="#slide1" class="btn btn-circle">❮</a>
+                                <a href="#slide3" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+
+                        
+                        <!-- Slider -3  -->
+                        <div id="slide3" class="carousel-item relative w-full py-20">
+
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ">
+                                <div class="px-10  lg:flex-col lg:items-center lg:ml-20  ">
+                                    <h2 class="lg:text-5xl font-bold">Keep Your Ride Safe At Every Time</h2>
+                                    <p class="py-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor 
+                                        do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                        <a class="btn px-10 bg-secondaryColor border-0 text-white hover:text-primaryColor">Purchase</a>
+                                    
+                                </div>
+
+                                <div>
+                                    <img src="images/slider/bike2.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="absolute left-5 bottom-10  flex  transform justify-between gap-5 px-7">
+                                <a href="#slide2" class="btn btn-circle">❮</a>
+                                <a href="#slide4" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+        
+                        <!-- Slider -4  -->
+                        <div id="slide4" class="carousel-item relative w-full py-20">
+
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ">
+                                <div class="px-10  lg:flex-col lg:items-center lg:ml-20  ">
+                                    <h2 class="lg:text-5xl font-bold">Keep Your Ride Safe At Every Time</h2>
+                                    <p class="py-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor 
+                                        do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                        <a class="btn px-10 bg-secondaryColor border-0 text-white hover:text-primaryColor">Purchase</a>
+                                    
+                                </div>
+
+                                <div>
+                                    <img src="images/slider/bike1.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="absolute left-5 bottom-10  flex  transform justify-between gap-5 px-7">
+                                <a href="#slide3" class="btn btn-circle">❮</a>
+                                <a href="#slide1" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
+
+
         
     </body>
 </html>

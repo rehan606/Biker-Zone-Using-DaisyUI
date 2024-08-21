@@ -45,11 +45,17 @@
             body{
                 font-family: "Manrope", sans-serif;
             }
+            .contact{
+                background-image: url(assets/images/bg.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
         </style>
 
     </head>
 
-    <body class="bg-[#F4F4F4]">
+    <body class="bg-[#F4F4F4] overflow-x-hidden">
         <!-- Header Section -->
         <header class="bg-primaryColor">
             <div class="container mx-auto">
@@ -113,8 +119,6 @@
                     </div>
                     <h2 class="text-3xl md:text-5xl lg:text-6xl font-extrabold px-10 text-center mb-10">A barn house of this design has a striking appearance</h2>
                     <p class="mb-10 text-center w-2/3 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-
-                    <!-- <a class=" bg-primaryColor text-white rounded-3xl hover:bg-white hover:text-black w-2/12 mx-auto px-5 py-4">View Details <i class="fa-solid fa-arrow-right bg-secondaryColor text-white leading-6 rounded-full w-6 h-6 text-sm text-center -rotate-45  "></i> </a> -->
 
                     <div class="mx-auto">
                         <a href="#" class="py-4 px-6 bg-primaryColor text-white font-semibold rounded-3xl hover:bg-opacity-85">View Details <i class="fa-solid fa-arrow-right bg-secondaryColor text-white leading-6 rounded-full w-6 h-6 text-sm text-center -rotate-45  ml-5"></i></a>
@@ -263,9 +267,9 @@
                 </div>
 
                 <!-- News Content -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
                     <!-- News-1 -->
-                    <div class="card bg-[#a4dac3] w-96 shadow-xl">
+                    <div class="card bg-[#0d6b685d] w-full shadow-xl">
                         <figure class="px-5 pt-7">
                           <img
                             src="assets/images/article1.png"
@@ -288,7 +292,7 @@
                     </div>
 
                     <!-- News-2 -->
-                    <div class="card bg-[#a4dac3] w-96 shadow-xl">
+                    <div class="card bg-[#0d6b685d] w-full shadow-xl">
                         <figure class="px-5 pt-7">
                           <img
                             src="assets/images/article2.png"
@@ -311,7 +315,7 @@
                     </div>
 
                     <!-- News- 3-->
-                    <div class="card bg-[#a4dac3] w-96 shadow-xl">
+                    <div class="card bg-[#0d6b685d] w-full shadow-xl">
                         <figure class="px-5 pt-7">
                           <img
                             src="assets/images/article3.png"
@@ -332,6 +336,41 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact">
+            <div class="container mx-auto py-20 px-5 md:px-10">
+                <!-- contact header-->
+                <div class=" md:w-3/4 mx-auto text-center">
+                    <div class="mx-auto mb-5">
+                        <a href="#" class="py-2 px-3 bg-primaryColor text-black rounded-3xl font-bold"><i class="fa-solid fa-arrow-right  text-black leading-6  text-sm text-center "></i> Let s Connect
+                        </a>
+                    </div>
+                    <h2 class="text-secondaryColor text-2xl md:text-3xl lg:text-5xl font-extrabold mb-7">Let s Discuss Next Project
+                    </h2>
+                    <p class="text-sm md:text-md mb-5 w-2/4 mx-auto ">The barn house captivates with its blend of rustic charm and modern sophistication featuring weathered wood, sleek metal accents.</p>
+                </div>
+
+                <!-- Form -->
+                <div class=" md:w-2/3 mx-auto">
+                    <form action="" class="">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <input type="text" placeholder="First Name" class="input input-bordered w-full rounded-3xl mb-5 focus:outline-none bg-primaryColor text-white" />
+
+                            <input type="text" placeholder="Last Name" class="input input-bordered w-full rounded-3xl mb-5 focus:outline-none bg-primaryColor text-white" />
+
+                            <input type="number" placeholder="Phone Number" class="input input-bordered w-full rounded-3xl mb-5 focus:outline-none bg-primaryColor text-white" />
+
+                            <input type="email" placeholder="Email" class="input input-bordered rounded-3xl w-full focus:outline-none bg-primaryColor text-white" />
+                        </div>
+
+                        <textarea class="textarea mt-5 w-full  h-36 focus:outline-none rounded-3xl bg-primaryColor text-white  " placeholder="Write your message here" ></textarea>
+                        
+                        <a href="#" class="py-4 px-6 text-center block bg-secondaryColor text-white font-semibold rounded-3xl hover:bg-opacity-85 mt-5">View Details <i class="fa-solid fa-paper-plane ml-3"></i></a>
+                    </form>
                 </div>
             </div>
         </section>
